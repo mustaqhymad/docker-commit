@@ -1,0 +1,29 @@
+version: "3"
+services:
+  ticket:
+    image: mustaqhymad/phonepayticket
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 4
+
+  recharge:
+    image: mustaqhymad/phonepayrecharge
+    ports:
+      - "8081:80"
+    deploy:
+      replicas: 4
+
+
+  movie:
+    image: mustaqhymad/phonepaymovie
+    ports:
+      - "8082:80"
+    deploy:
+      replicas: 4
+      
+      
+
+
+       
+
